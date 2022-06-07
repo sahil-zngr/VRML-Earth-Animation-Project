@@ -1,0 +1,862 @@
+#VRML V2.0 utf8
+Viewpoint {
+ 
+         position    25 0 70 
+         description "front"    #the name of the view,
+                    
+     }
+Background {
+skyColor 0 0 0
+}
+Transform{
+ translation 30 -9.5 40
+children[
+Shape {
+   appearance Appearance { 
+      material Material { diffuseColor 0 1 0 } 
+   }
+   geometry Text {
+      string [ "press the red button" ]
+      fontStyle FontStyle {
+	 family [ "Serenity", "SERIF" ]
+      }
+      length [ 4 20 ]
+   }
+}]}
+
+Group {
+   children [
+	DEF TheTouchSensor TouchSensor { }
+
+	Sound {
+		location    25 0 40
+		source DEF ac AudioClip { 
+				loop FALSE
+				
+				pitch 1.0
+				url "animationaudio.wav"
+		}
+	}
+	Transform{
+	translation 35 -8 40
+children[
+	Shape {
+		appearance Appearance { material Material {
+		diffuseColor   1 0 0}}
+		geometry Sphere {radius 0.5}
+	}]}
+   ]
+}
+
+
+
+
+  		
+Group {
+   children [
+  
+   #Earth
+      DEF Planet3 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "rgb2048.jpg" }
+     }
+     geometry Sphere { radius 5}
+  }
+      },
+
+
+
+
+
+Group {
+  children [
+
+
+   DEF Planet4 Transform {
+  translation 50 20 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 1 }
+  }
+      }]},
+ DEF Planet5 Transform {
+  translation 8 30 -60
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 1 }
+  }
+      },
+
+DEF rocket Transform{ translation 2 0 0
+ rotation  0  0 -1.6 1
+      children
+Shape {
+    geometry Cone { bottomRadius 0.5 
+        height 0.5 }
+    appearance Appearance {
+        material Material {  
+            diffuseColor   1 1 1  # red, green, blue
+            emissiveColor 1 1 1
+        }
+    }
+   }
+},
+
+DEF rocket1 Transform{ translation 2 0 0
+ rotation  0  0 -1.6 1
+      children
+Shape {
+    geometry Cone { bottomRadius 0.5 
+        height 0.5 }
+    appearance Appearance {
+        material Material {  
+            diffuseColor   1 1 1  # red, green, blue
+            emissiveColor 1 1 1
+        }
+    }
+   }
+},
+
+DEF fire Transform {
+  translation 80 5 0
+ rotation 0 0 1 1.5708
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { 
+diffuseColor    0.96 0.96 0.96
+emissiveColor     0.7 0.5 0 transparency  0.7 }
+
+     }
+     geometry Cylinder { radius 2 height 0.5}
+  }
+      },
+ DEF fire1 Transform {
+  translation 80 5 0
+ rotation 0 1 1 1.5
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { 
+diffuseColor    0.96 0.96 0.96
+emissiveColor     0.8 0.4 0 transparency  0.7 }
+
+     }
+     geometry Cylinder { radius 2 height 1}
+  }
+      },
+
+
+DEF fire2 Transform {
+  translation 80 5 0
+ rotation 0 1 1 1.6
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { 
+diffuseColor    0.96 0.96 0.96
+emissiveColor     1 0.5 0 transparency  0.7 }
+
+     }
+     geometry Cylinder { radius 3 height 2}
+  }
+      },
+
+   
+Group {
+   children [
+  
+      DEF ast1 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast2 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+
+DEF ast3 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast4 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast5 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast6 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast7 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast8 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast9 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast10 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast11 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast12 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast13 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast14 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast15 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast16 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast17 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast18 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast19 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast20 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast21 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast22 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast23 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast24 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast25 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast26 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast27 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+DEF ast28 Transform {
+  translation 0 0 0
+  center 0 0 0
+  children Shape {
+     appearance Appearance {
+        material Material { }
+        texture ImageTexture {
+   url "ast.jpg" }
+     }
+     geometry Sphere { radius 0.3}
+  }
+      }
+
+]}
+     
+      DEF Clock3 TimeSensor {
+  cycleInterval 5.0
+  loop TRUE
+      },
+   DEF Clock4 TimeSensor {    
+  cycleInterval 5
+      },
+DEF Clock5 TimeSensor {    
+  cycleInterval 9.5
+      },
+DEF Clock6 TimeSensor {    
+  cycleInterval 5
+      },
+DEF Clock7 TimeSensor {    
+  cycleInterval 9.5
+      },
+DEF Clock8 TimeSensor {    
+  cycleInterval 14.6
+      },
+DEF Clock9 TimeSensor {    
+  cycleInterval 14.6
+      },
+
+DEF Clock10 TimeSensor {    
+  cycleInterval 25
+      },
+
+DEF timer TimeSensor {
+	cycleInterval 20
+},
+      
+      DEF Path3 OrientationInterpolator {
+  key [ 0.0 0.50 1.0 ]
+  keyValue [
+    0 0.996989 0.0775436 0.0,
+    0 0.996989 0.0775436 3.14,
+    0 0.996989 0.0775436 6.28
+   ]
+      }
+
+DEF ro PositionInterpolator {
+	key [ 0  0.99 1 ]
+	keyValue [2 0 0 ,37.5 15 0 ,100 100 100]
+}
+
+DEF ro1 PositionInterpolator {
+	key [ 0 0.5 0.99 1 ]
+	keyValue [2 0 0 ,2 0 0 , 25 10 0 100 100 100]
+}
+
+DEF pi PositionInterpolator {
+	key [ 0 0.72 0.73 1 ]
+	keyValue [50 20 0 ,12.5 5 0, 100 100 100 ,100 100 100]
+}
+DEF pi1 PositionInterpolator {
+	key [ 0 0.99 1 ]
+	keyValue [8 30 -60 , 12.5 5 0,100 100 100]
+}
+DEF fi PositionInterpolator {
+	key [ 0 0.99 1 ]
+	keyValue [100 100 100 , 100 100 100 ,37.5 15 0 ]
+}
+DEF fi1 PositionInterpolator {
+	key [ 0 0.99 1 ]
+	keyValue [100 100 100 ,100 100 100, 25 10 0]
+} 
+
+DEF fi2 PositionInterpolator {
+	key [ 0 0.99 1 ]
+	keyValue [100 100 100 ,100 100 100, 12.5 5 0]
+}
+
+
+DEF as1 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 50 50 50 ]
+}
+DEF as2 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 49 49 49 ]
+}
+DEF as3 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 48 48 48  ]
+}
+DEF as4 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 47 47 47 ]
+}
+DEF as5 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 46 46 46 ]
+}
+DEF as6 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 45 45 45 ]
+}
+DEF as7 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 44 44 44 ]
+}
+
+DEF as8 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 49 49 50 ]
+}
+DEF as9 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 48 48 50 ]
+}
+DEF as10 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 47 47 50 ]
+}
+DEF as11 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 46 46 50 ]
+}
+DEF as12 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 45 45 50 ]
+}
+DEF as13 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 44 44 50 ]
+}
+DEF as14 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 43 43 50 ]
+}
+
+DEF as15 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 50 50 -50 ]
+}
+DEF as16 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 49 49 -49 ]
+}
+DEF as17 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 48 48 -48  ]
+}
+DEF as18 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 47 47 -47 ]
+}
+DEF as19 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 46 46 -46 ]
+}
+DEF as20 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 45 45 -45 ]
+}
+DEF as21 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 44 44 -44 ]
+}
+
+DEF as22 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 49 49 -50 ]
+}
+DEF as23 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 48 48 -50 ]
+}
+DEF as24 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 47 47 -50 ]
+}
+DEF as25 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 46 46 -50 ]
+}
+DEF as26 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 45 45  -50 ]
+}
+DEF as27 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 44 44 -50 ]
+}
+DEF as28 PositionInterpolator {
+	key [ 0 0.583 0.584 1 ]
+	keyValue [100 100 100 , 100 100 100, 12.5 5 0, 43 43 -50 ]
+}
+
+
+     ]
+}
+
+ROUTE Clock3.fraction_changed TO Path3.set_fraction
+ROUTE Path3.value_changed TO Planet3.set_rotation
+
+ROUTE Clock4.fraction_changed TO ro.set_fraction
+ROUTE ro.value_changed TO rocket.set_translation
+
+ROUTE Clock5.fraction_changed TO ro1.set_fraction
+ROUTE ro1.value_changed TO rocket1.set_translation
+
+ROUTE Clock6.fraction_changed TO fi.set_fraction
+ROUTE fi.value_changed TO fire.set_translation
+
+ROUTE Clock7.fraction_changed TO fi1.set_fraction
+ROUTE fi1.value_changed TO fire1.set_translation
+
+ROUTE Clock9.fraction_changed TO fi2.set_fraction
+ROUTE fi2.value_changed TO fire2.set_translation
+
+ROUTE Clock10.fraction_changed TO as1.set_fraction
+ROUTE as1.value_changed TO ast1.set_translation
+
+ROUTE Clock10.fraction_changed TO as2.set_fraction
+ROUTE as2.value_changed TO ast2.set_translation
+
+ROUTE Clock10.fraction_changed TO as3.set_fraction
+ROUTE as3.value_changed TO ast3.set_translation
+
+ROUTE Clock10.fraction_changed TO as4.set_fraction
+ROUTE as4.value_changed TO ast4.set_translation
+
+ROUTE Clock10.fraction_changed TO as5.set_fraction
+ROUTE as5.value_changed TO ast5.set_translation
+
+ROUTE Clock10.fraction_changed TO as6.set_fraction
+ROUTE as6.value_changed TO ast6.set_translation
+
+ROUTE Clock10.fraction_changed TO as7.set_fraction
+ROUTE as7.value_changed TO ast7.set_translation
+
+ROUTE Clock10.fraction_changed TO as8.set_fraction
+ROUTE as8.value_changed TO ast8.set_translation
+
+ROUTE Clock10.fraction_changed TO as9.set_fraction
+ROUTE as9.value_changed TO ast9.set_translation
+
+ROUTE Clock10.fraction_changed TO as10.set_fraction
+ROUTE as10.value_changed TO ast10.set_translation
+
+ROUTE Clock10.fraction_changed TO as11.set_fraction
+ROUTE as11.value_changed TO ast11.set_translation
+
+
+ROUTE Clock10.fraction_changed TO as12.set_fraction
+ROUTE as12.value_changed TO ast12.set_translation
+
+ROUTE Clock10.fraction_changed TO as13.set_fraction
+ROUTE as13.value_changed TO ast13.set_translation
+
+ROUTE Clock10.fraction_changed TO as14.set_fraction
+ROUTE as14.value_changed TO ast14.set_translation
+
+ROUTE Clock10.fraction_changed TO as15.set_fraction
+ROUTE as15.value_changed TO ast15.set_translation
+
+ROUTE Clock10.fraction_changed TO as16.set_fraction
+ROUTE as16.value_changed TO ast16.set_translation
+
+ROUTE Clock10.fraction_changed TO as17.set_fraction
+ROUTE as17.value_changed TO ast17.set_translation
+
+ROUTE Clock10.fraction_changed TO as18.set_fraction
+ROUTE as18.value_changed TO ast18.set_translation
+
+ROUTE Clock10.fraction_changed TO as19.set_fraction
+ROUTE as19.value_changed TO ast19.set_translation
+
+ROUTE Clock10.fraction_changed TO as20.set_fraction
+ROUTE as20.value_changed TO ast20.set_translation
+
+ROUTE Clock10.fraction_changed TO as22.set_fraction
+ROUTE as22.value_changed TO ast22.set_translation
+
+ROUTE Clock10.fraction_changed TO as23.set_fraction
+ROUTE as23.value_changed TO ast23.set_translation
+
+ROUTE Clock10.fraction_changed TO as24.set_fraction
+ROUTE as24.value_changed TO ast24.set_translation
+
+ROUTE Clock10.fraction_changed TO as25.set_fraction
+ROUTE as25.value_changed TO ast25.set_translation
+
+ROUTE Clock10.fraction_changed TO as26.set_fraction
+ROUTE as26.value_changed TO ast26.set_translation
+
+ROUTE Clock10.fraction_changed TO as27.set_fraction
+ROUTE as27.value_changed TO ast27.set_translation
+
+ROUTE Clock10.fraction_changed TO as28.set_fraction
+ROUTE as28.value_changed TO ast28.set_translation
+
+ROUTE TheTouchSensor.touchTime TO ac.set_startTime
+ROUTE TheTouchSensor.touchTime TO timer.startTime
+ROUTE TheTouchSensor.touchTime TO Clock4.startTime
+ROUTE TheTouchSensor.touchTime TO Clock5.startTime
+ROUTE TheTouchSensor.touchTime TO Clock6.startTime
+ROUTE TheTouchSensor.touchTime TO Clock7.startTime
+ROUTE TheTouchSensor.touchTime TO Clock8.startTime
+ROUTE TheTouchSensor.touchTime TO Clock9.startTime
+ROUTE TheTouchSensor.touchTime TO Clock10.startTime
+
+
+ROUTE Clock8.fraction_changed TO pi1.set_fraction
+ROUTE pi1.value_changed TO Planet5.set_translation
+
+
+ROUTE timer.fraction_changed TO pi.set_fraction
+ROUTE pi.value_changed TO Planet4.set_translation
+
+
